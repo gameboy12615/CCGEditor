@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Cocos2dHeader.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Cocos2dHeader.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_USING_V110_SDK71_;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;$(ProjectDir)Classes;$(ProjectDir);$(EngineRoot)cocos\editor-support;$(EngineRoot)cocos;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\platform\desktop;$(EngineRoot)external\glfw3\include\win32;$(EngineRoot)external\win32-specific\gles\include\OGLES;$(EngineRoot)cocos\scripting\lua-bindings\auto;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)external\lua\luajit\include;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\lua;$(ProjectDir)Classes\CCGame\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Configuration).win32\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5Widgetsd.lib;glew32.lib;libzlib.lib;libpng.lib;libjpeg.lib;libtiff.lib;libwebp.lib;libiconv.lib;glfw3.lib;freetype250.lib;winmm.lib;ws2_32.lib;libchipmunk.lib;libbox2d.lib;libSpine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;lua51.lib;libcocos2d.lib;libluacocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ccgeditor.cpp" />
+    <ClCompile Include="Classes\AppDelegate.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGAnimation.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGCharacter.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGCollision.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGConfig.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGDataCache.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGLuaCache.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGLuaEngine.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGScene.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGSpell.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGSprite.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGSpriteFrame.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGSpriteFrameCache.cpp" />
+    <ClCompile Include="Classes\CCGame\source\CCGVirtualJoystick.cpp" />
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButton.cpp" />
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButtonSkinnedBase.cpp" />
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystick.cpp" />
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystickSkinnedBase.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTCharacter.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTPlayer.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTRobot.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTSpell.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGCharacter.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGPlayer.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGRobot.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGSpell.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGCharacter.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGPlayer.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGRobot.cpp" />
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGSpell.cpp" />
+    <ClCompile Include="Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="Classes\Level.cpp" />
+    <ClCompile Include="Classes\LevelGUI.cpp" />
+    <ClCompile Include="Classes\QtPort\CCQApplication.cpp" />
+    <ClCompile Include="Classes\QtPort\CCQGLView.cpp" />
+    <ClCompile Include="Classes\QtPort\CCQGLWidget.cpp" />
+    <ClCompile Include="filebrowser.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_ccgeditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQApplication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_filebrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_ccgeditor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ccgeditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQApplication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_filebrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ccgeditor.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ccgeditor.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 -D_USING_V110_SDK71_ -D_UNICODE  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I$(ProjectDir)Classes" "-I$(ProjectDir)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)cocos\scripting\lua-bindings\auto" "-I$(EngineRoot)cocos\scripting\lua-bindings\manual" "-I$(EngineRoot)external\lua\luajit\include" "-I$(EngineRoot)external\lua\tolua" "-I$(EngineRoot)external\lua" "-I$(ProjectDir)Classes\CCGame\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ccgeditor.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ccgeditor.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\AppDelegate.h" />
+    <ClInclude Include="Classes\CCGame\include\CCACT.h" />
+    <ClInclude Include="Classes\CCGame\include\CCFTG.h" />
+    <ClInclude Include="Classes\CCGame\include\CCGame.h" />
+    <ClInclude Include="Classes\CCGame\include\CCSTG.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGAnimation.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGCharacter.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGCollision.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGConfig.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGDataCache.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGLuaCache.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGLuaEngine.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGScene.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGSpell.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGSprite.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGSpriteFrame.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGSpriteFrameCache.h" />
+    <ClInclude Include="Classes\CCGame\source\CCGVirtualJoystick.h" />
+    <ClInclude Include="Classes\CCGame\source\CCPtr.h" />
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButton.h" />
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButtonSkinnedBase.h" />
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystick.h" />
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystickSkinnedBase.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTCharacter.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTPlayer.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTRobot.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTSpell.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGCharacter.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGPlayer.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGRobot.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGSpell.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGCharacter.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGPlayer.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGRobot.h" />
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGSpell.h" />
+    <ClInclude Include="Classes\HelloWorldScene.h" />
+    <ClInclude Include="Classes\Level.h" />
+    <ClInclude Include="Classes\LevelGUI.h" />
+    <ClInclude Include="Classes\QtPort\CCQGLView.h" />
+    <CustomBuild Include="Classes\QtPort\CCQGLWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CCQGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 -D_USING_V110_SDK71_ -D_UNICODE  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I$(ProjectDir)Classes" "-I$(ProjectDir)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)cocos\scripting\lua-bindings\auto" "-I$(EngineRoot)cocos\scripting\lua-bindings\manual" "-I$(EngineRoot)external\lua\luajit\include" "-I$(EngineRoot)external\lua\tolua" "-I$(EngineRoot)external\lua" "-I$(ProjectDir)Classes\CCGame\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CCQGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="Classes\QtPort\CCQApplication.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CCQApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 -D_USING_V110_SDK71_ -D_UNICODE  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I$(ProjectDir)Classes" "-I$(ProjectDir)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)cocos\scripting\lua-bindings\auto" "-I$(EngineRoot)cocos\scripting\lua-bindings\manual" "-I$(EngineRoot)external\lua\luajit\include" "-I$(EngineRoot)external\lua\tolua" "-I$(EngineRoot)external\lua" "-I$(ProjectDir)Classes\CCGame\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CCQApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="filebrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing filebrowser.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 -D_USING_V110_SDK71_ -D_UNICODE "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I$(ProjectDir)Classes" "-I$(ProjectDir)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)cocos\scripting\lua-bindings\auto" "-I$(EngineRoot)cocos\scripting\lua-bindings\manual" "-I$(EngineRoot)external\lua\luajit\include" "-I$(EngineRoot)external\lua\tolua" "-I$(EngineRoot)external\lua" "-I$(ProjectDir)Classes\CCGame\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing filebrowser.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_ccgeditor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ccgeditor.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2013_opengl" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

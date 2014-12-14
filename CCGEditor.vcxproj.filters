@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{291e6c71-e85d-48be-bf9e-95a6d99188f1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{5849b8e4-d41b-49cf-b5f5-21c6441c9ebe}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{2c9b94b9-ae6a-4f34-b289-327eaef86fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame">
+      <UniqueIdentifier>{60f12a03-8ab5-458d-b6f6-4f3d6e7278ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\QtPort">
+      <UniqueIdentifier>{6d987f07-a2fe-4fe2-9779-969133ceefd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\include">
+      <UniqueIdentifier>{ec0b95ca-6339-450b-af38-4ce7590ba405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source">
+      <UniqueIdentifier>{91bd4c3c-ab3d-4c87-b514-35c06f646d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\external">
+      <UniqueIdentifier>{95e47e5a-40d5-4029-a633-972a90573023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\external\SneakyJoystick">
+      <UniqueIdentifier>{d75e2817-6bc0-4c57-b479-9b28d6646245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\frameworks">
+      <UniqueIdentifier>{fa53889f-e1cf-4520-a582-a7e7037fc737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\frameworks\ACT">
+      <UniqueIdentifier>{e1692bbb-e894-45d3-aee2-34fad7544bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\frameworks\FTG">
+      <UniqueIdentifier>{51ae37f9-3069-4ba4-a205-3a2dd2d18787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\CCGame\source\frameworks\STG">
+      <UniqueIdentifier>{416890fd-c1a3-4407-acfd-9c8fb1481d2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ccgeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ccgeditor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ccgeditor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_ccgeditor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Level.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\LevelGUI.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\QtPort\CCQApplication.cpp">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQApplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQApplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\QtPort\CCQGLView.cpp">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\QtPort\CCQGLWidget.cpp">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQGLWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQGLWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButton.cpp">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButtonSkinnedBase.cpp">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystick.cpp">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystickSkinnedBase.cpp">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTCharacter.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTPlayer.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTRobot.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\ACT\ACTSpell.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGCharacter.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGPlayer.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGRobot.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\FTG\FTGSpell.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGCharacter.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGPlayer.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGRobot.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\frameworks\STG\STGSpell.cpp">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGAnimation.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGCharacter.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGCollision.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGConfig.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGDataCache.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGLuaCache.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGLuaEngine.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGScene.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGSpell.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGSprite.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGSpriteFrame.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGSpriteFrameCache.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\CCGame\source\CCGVirtualJoystick.cpp">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClCompile>
+    <ClCompile Include="filebrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_filebrowser.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_filebrowser.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ccgeditor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ccgeditor.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ccgeditor.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\QtPort\CCQApplication.h">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\QtPort\CCQGLWidget.h">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </CustomBuild>
+    <CustomBuild Include="filebrowser.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_ccgeditor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Level.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\LevelGUI.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\QtPort\CCQGLView.h">
+      <Filter>Source Files\Classes\QtPort</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\include\CCACT.h">
+      <Filter>Source Files\Classes\CCGame\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\include\CCFTG.h">
+      <Filter>Source Files\Classes\CCGame\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\include\CCGame.h">
+      <Filter>Source Files\Classes\CCGame\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\include\CCSTG.h">
+      <Filter>Source Files\Classes\CCGame\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButton.h">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyButtonSkinnedBase.h">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystick.h">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\external\SneakyJoystick\SneakyJoystickSkinnedBase.h">
+      <Filter>Source Files\Classes\CCGame\source\external\SneakyJoystick</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTCharacter.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTPlayer.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTRobot.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\ACT\ACTSpell.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\ACT</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGCharacter.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGPlayer.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGRobot.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\FTG\FTGSpell.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\FTG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGCharacter.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGPlayer.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGRobot.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\frameworks\STG\STGSpell.h">
+      <Filter>Source Files\Classes\CCGame\source\frameworks\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGAnimation.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGCharacter.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGCollision.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGConfig.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGDataCache.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGLuaCache.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGLuaEngine.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGScene.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGSpell.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGSprite.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGSpriteFrame.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGSpriteFrameCache.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCGVirtualJoystick.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\CCGame\source\CCPtr.h">
+      <Filter>Source Files\Classes\CCGame\source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
